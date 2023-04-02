@@ -1,63 +1,190 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
 * {
   margin: 0;
 }
 
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
-.header {
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: amazonFont-rg;
+  src: url("./fonts/AmazonEmber_Rg.ttf");
+}
+
+@font-face {
+  font-family: amazonFont-bd;
+  src: url("./fonts/AmazonEmber_Bd.ttf");
+}
+
+@font-face {
+  font-family: amazonFont-lt;
+  src: url("./fonts/AmazonEmber_Lt.ttf");
+}
+
+body {
+  font-family: amazonFont-rg;
+}
+
+.nav-left {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.7em;
+}
+
+.nav-belt {
   height: 60px;
-  display: flex;
-  align-items: center;
   background-color: #131921;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.header__logo {
-  width: 97px;
-  object-fit: contain;
-  margin: 0 20px;
-  margin-top: 10px;
-}
-
-.header__search {
   display: flex;
-  flex: 1;
+  flex-flow: row nowrap;
   align-items: center;
-  border-radius: 24px;
+  gap: 2em;
 }
 
-.header__searchInput {
-  height: 12px;
-  padding: 10px;
-  border: none;
-  width: 100%;
+.nav-under__belt {
+  height: 40px;
+  background-color: #232f3e;
 }
 
-.location__icon {
-  color: #fff;
+.nav-log_img {
+  height: 29px;
+  margin-left: 18px;
+  margin-top: 4px;
+}
+
+.nav-global-location-slot__txt {
+  width: 50px;
   display: flex;
-  flex-flow: column-reverse;
+  flex-flow: column;
+  color: white;
+  line-height: 0.9rem;
 }
 
-.location__card {
+span {
+  white-space: nowrap;
+}
+
+.nav-global-location-slot__deliver {
+  font-family: amazonFont-lt;
+  color: lightgray;
+  font-size: 0.75em;
+}
+
+.nav-global-location-slot__location {
+  font-family: amazonFont-bd;
+  font-size: 0.9em;
+}
+
+.nav-global-location-slot {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3px;
+}
+
+.nav-global-location-slot__ico {
+  color: #fff;
+}
+
+.nav-mid {
   display: flex;
   flex-flow: row nowrap;
 }
 
-.location__text {
+.nav-form {
+  display: flex;
+  flex-flow: row nowrap;
+
   color: #fff;
+  width: auto;
+}
+
+.nav__search {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  width: auto;
+}
+
+.nav__searchInput {
+  height: 40px;
+}
+
+.nav-dropdown__card {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.card__search-Label {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }

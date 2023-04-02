@@ -4,39 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.css" rel="Stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <title>Amazon.com. Spend less. Smile more.</title>
+    <link
+      id="amazon-icon"
+      rel="icon"
+      type="image"
+      href="images/Amazon-icon.png"
+    />
   </head>
   <body>
-    <div class="header">
-      <img
-        class="header__logo"
-        src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        alt="logo"
-      />
-
-      <div class="location__card">
-        <div class="location__icon">
-          <span class="material-symbols-outlined"> location_on </span>
+    <div>
+      <div class="nav-belt">
+        <div class="nav-left">
+          <div class="nav-logo">
+            <img class="nav-log_img" src="./images/amazon-logo.png" />
+          </div>
+          <div class="nav-global-location-slot">
+            <div class="nav-global-location-slot__ico">
+              <span class="material-symbols-outlined"> location_on </span>
+            </div>
+            <div class="nav-global-location-slot__txt">
+              <span class="nav-global-location-slot__deliver">Deliver to</span>
+              <span class="nav-global-location-slot__location"> Canada</span>
+            </div>
+          </div>
         </div>
-        <div class="location__text">
-          <p class="deliver">Deliver to</p>
-          <p class="location">Turkey</p>
+        <div class="nav-mid">
+          <form class="nav-form" action="#">
+            <div class="nav-dropdown__card">
+              <div class="card__search-Label">
+                <span class="search__label"> All </span>
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+            </div>
+            <div class="nav__search">
+              <!-- Drop DownList -->
+              <input
+                class="nav__searchInput"
+                type="text"
+                placeholder="Search Amazon"
+              />
+              <!-- In SearchBar  "Search Amazon" -->
+              <span class="material-symbols-outlined"> search </span>
+            </div>
+
+            <!-- Language Icon -->
+          </form>
         </div>
-      </div>
 
-      <div class="header__search">
-        <!-- Drop DownList -->
-        <input class="header__searchInput" type="text" />
-        <!-- In SearchBar  "Search Amazon" -->
-        <span class="material-symbols-outlined"> search </span>
+        <div class="nav-right"></div>
       </div>
-
-      <!-- Language Icon -->
+      <div class="nav-under__belt"></div>
     </div>
   </body>
 </html>
