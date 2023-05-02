@@ -115,7 +115,7 @@ body {
 }
 
 .nav-logo {
-  width: 100%;
+  flex-shrink: 0;
 }
 
 .nav-log_img {
@@ -173,7 +173,22 @@ span {
 }
 
 .dropdown__menu {
-  /* display: none; */
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: 0;
+  height: 35px;
+  width: auto;
+  font-family: inherit;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+  border: 0;
+  line-height: 35px;
 }
 
 .nav__search {
@@ -181,10 +196,15 @@ span {
   flex-flow: row nowrap;
   align-content: center;
   height: auto;
-  min-width: 51.5vh;
+  min-width: 53.5vh;
+  width: max-content;
+  max-width: max-content;
+
+
 }
 
 .nav__searchInput {
+
   height: 40px;
   width: 100%;
 }
