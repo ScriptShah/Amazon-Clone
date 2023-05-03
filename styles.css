@@ -169,6 +169,7 @@ span {
 
 .nav__searchInput {
   height: 38px;
+  width: min-content;
   flex-grow: 1;
   flex-shrink: 1;
 }
@@ -202,4 +203,23 @@ span {
   justify-content: center;
   align-items: center;
   border-radius: 0px 5px 5px 0px;
+}
+
+.language__icon {
+  display: flex;
+  flex-flow: row nowrap;
+  color: #ffffff;
+  align-items: center;
+  padding: 5px;
+  gap: 2px;
+  margin-left: 10px;
+}
+
+.flag {
+  height: 50%;
+  width: 20%;
+}
+
+.language {
+  font-size: 14px;
 }
