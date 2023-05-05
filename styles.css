@@ -98,6 +98,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   gap: 0.7em;
+  flex-shrink: 0;
 }
 
 .nav-belt {
@@ -245,6 +246,7 @@ span {
   display: flex;
   flex-flow: column nowrap;
   line-height: 10px;
+  margin-left: 10px;
 }
 
 .signIn {
@@ -259,4 +261,21 @@ span {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+
+.orders {
+  display: flex;
+  flex-flow: column nowrap;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.order__heading {
+  font-size: 12px;
+  margin-bottom: -1px;
+}
+
+.order {
+  font-size: 14px;
+  font-weight: 700;
 }
