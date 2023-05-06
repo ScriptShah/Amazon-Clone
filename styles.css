@@ -166,7 +166,6 @@ span {
   flex-shrink: 1;
 }
 
-
 .dropdown__menu {
   display: none;
 }
@@ -177,12 +176,9 @@ span {
   align-content: center;
   flex-grow: 1;
   flex-shrink: 1;
-
-
 }
 
 .nav__searchInput {
-
   height: 40px;
   flex-grow: 1;
   flex-shrink: 1;
@@ -220,6 +216,12 @@ span {
   border-radius: 0px 5px 5px 0px;
 }
 
+.nav-right {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 3px;
+}
 
 .language__icon {
   display: flex;
@@ -285,15 +287,25 @@ span {
   display: flex;
   flex-flow: row nowrap;
   color: #fff;
-  flex-shrink: 0;
   align-items: flex-end;
   font-size: 14px;
   font-weight: 700;
   margin-left: 10px;
+  padding-right: 20px;
+  justify-content: center;
 }
 
 .cart__img {
-  height: 30%;
-  width: 30%;
+  width: 35%;
   flex-shrink: 0;
+  display: none;
+}
+
+.cart__image {
+  background-image: url("https://i.ibb.co/dDRW9FL/cart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
 }
