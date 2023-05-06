@@ -103,6 +103,7 @@ body {
 
 .nav-belt {
   height: 60px;
+  width: 100vw;
   background-color: #131921;
   display: flex;
   flex-flow: row nowrap;
@@ -112,12 +113,14 @@ body {
 }
 
 .nav-under__belt {
+  width: 100vw;
   height: 40px;
   background-color: #232f3e;
 }
 
 .nav-logo {
   flex-shrink: 0;
+  flex-grow: 0;
   padding-left: 1.1rem;
 }
 
@@ -308,4 +311,65 @@ span {
   background-size: cover;
   width: 40px;
   height: 40px;
+}
+
+.nav-under__belt,
+.under-belt__link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.under-belt__list {
+  margin-left: -23px;
+  display: flex;
+  flex-flow: row nowrap;
+  width: max-content;
+  gap: 18px;
+}
+
+.under-belt__list li {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-shrink: 0;
+  list-style: none;
+  color: #fff;
+}
+
+.nav-under__belt a {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .nav__searchInput {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .cart__container {
+    display: none;
+  }
+
+  .nav-under__belt a {
+    display: none;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav-mid {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
 }
