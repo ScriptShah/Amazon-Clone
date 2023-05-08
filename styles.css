@@ -92,24 +92,17 @@ h6 {
 
 body {
   font-family: amazonFont-rg;
-  background-color: #E3E6E6;
-
-
-
+  background-color: #e3e6e6;
 }
 
 .bg {
+  width: 1500px;
+  height: 600px;
+  overflow: hidden;
   position: absolute;
   z-index: -1;
-  overflow: hidden;
   margin-top: 100px;
-  padding-left: 55px;
-  padding-right: 55px;
-
-}
-
-.bg__image {
-  height: auto;
+  margin-left: 10px;
 }
 
 .nav-left {
@@ -317,7 +310,6 @@ span {
 }
 
 .cart__img {
-  width: 35%;
   flex-shrink: 0;
   display: none;
 }
@@ -367,35 +359,10 @@ span {
   margin-right: 10px;
 }
 
-
 .space {
-  width: 100%;
-  height: 13em;
+  width: 1500px;
+  height: 250px;
 }
-
-.info__link {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  background-color: #F5F6F6;
-  padding: 10px;
-  margin-left: 70px;
-  margin-right: 70px;
-  font-size: 14px;
-  gap: 5px;
-}
-
-.info__link a {
-  color: #417D9B;
-  text-decoration: none;
-}
-
-.info__link a:hover {
-  text-decoration: underline;
-  color: orange;
-}
-
-
 
 @media screen and (max-width: 900px) {
   .nav__searchInput {
@@ -420,4 +387,25 @@ span {
     flex-shrink: 0;
     margin-right: 20px;
   }
+}
+
+.product__card {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cards__container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 400px;
+  width: 450px;
+  background-color: #fff;
+}
+
+.card__item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
