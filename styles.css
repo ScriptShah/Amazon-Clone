@@ -399,13 +399,31 @@ span {
 .cards__container {
   display: flex;
   flex-flow: row wrap;
-  height: 400px;
-  width: 450px;
-  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  height: 335px;
+  width: 353px;
+  background-color: #ffffff;
 }
 
 .card__item {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.card__item p {
+  margin-left: 10px;
+}
+
+.card-img__container {
+  height: 109px;
+  width: 174.8px;
+  background-color: cadetblue;
+}
+
+.item__img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
