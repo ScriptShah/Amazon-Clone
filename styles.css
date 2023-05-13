@@ -107,6 +107,14 @@ body {
   margin-left: 3rem;
 }
 
+.main__section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .nav-left {
   display: flex;
   flex-flow: row nowrap;
@@ -551,6 +559,43 @@ span {
   display: flex;
   flex-shrink: 1;
 }
+
+
+
+.new__customer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #fff;
+}
+
+
+.customer__container {
+  width: 947px;
+  height: 124px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
