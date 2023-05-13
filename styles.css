@@ -94,7 +94,6 @@ body {
   /* font-family: amazonFont-rg; */
   background-color: #e3e6e6;
   font-family: amazonFont-rg, sans-serif;
-  letter-spacing: 1px;
 }
 
 .bg {
@@ -189,8 +188,6 @@ span {
   flex-grow: 1;
   flex-shrink: 1;
 }
-
-
 
 .nav__search {
   display: flex;
@@ -372,8 +369,6 @@ span {
   height: 250px;
 }
 
-
-
 .products__container {
   margin: auto;
   padding-left: 20px;
@@ -422,7 +417,6 @@ span {
   width: 174.8px;
   background-color: #fff;
   max-width: fit-content;
-
 }
 
 .item__img {
@@ -464,7 +458,6 @@ span {
   color: orange;
 }
 
-
 .card-img__container.slide {
   height: 310px;
   width: 300px;
@@ -486,7 +479,6 @@ span {
   width: 350px;
   float: right;
 }
-
 
 .signIn__tab-heading {
   width: 320px;
@@ -543,7 +535,6 @@ span {
   margin-left: 10px;
 }
 
-
 .products.ruler__container {
   display: flex;
   flex-flow: row wrap;
@@ -552,7 +543,6 @@ span {
   gap: 9px;
   flex-shrink: 1;
   margin: auto;
-
 }
 
 .ruler.image__container {
@@ -560,44 +550,76 @@ span {
   flex-shrink: 1;
 }
 
-
-
 .new__customer {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   background-color: #fff;
+  padding: 30px 0px;
 }
-
 
 .customer__container {
-  width: 947px;
-  height: 124px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid;
-  border-radius: 2px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 960px;
+  height: 100px;
+  padding: 30px 20px;
+  gap: 3px;
+  border-top: 1px #9d9b9b solid;
+  margin-top: -20px;
 }
 
+.customer__recom {
+  font-size: 13px;
+}
 
+.customer__signIn {
+  max-width: 230px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 230px;
+  display: block;
+  background-position: -10px -170px;
+  background-image: url(https://m.media-amazon.com/images/S/sash/vfqcwUkuArEiwD2.png);
+  cursor: pointer;
+  background-position: right -170px;
+  display: block;
+  height: 28px;
+  position: relative;
+  color: #000;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffe093;
+  font-size: 13px;
+  border: 0;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
 
+.start_here {
+  font-size: 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 6px;
+}
 
+.start__link {
+  text-decoration: none;
+  color: #007185;
+  font-size: 12px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.start__link:hover {
+  text-decoration: underline;
+  color: orange;
+}
 
 @media screen and (max-width: 900px) {
   .nav__searchInput {
