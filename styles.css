@@ -621,6 +621,68 @@ span {
   color: orange;
 }
 
+
+.back__top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 49px;
+  background-color: #37475A;
+  width: 100%;
+}
+
+.back__top:hover {
+  cursor: pointer;
+  background-color: #232F3E;
+}
+
+.back__top a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #232F3E;
+  height: 1118.7px;
+}
+
+.footer__links {
+  display: flex;
+  flex-flow: column wrap;
+  width: max-content;
+  height: 318.36px;
+  color: #fff;
+  line-height: 120%;
+  font-family: amazonFont-lt, sans-serif;
+
+}
+
+.footer__spacer {
+  width: 100px;
+  height: 318.36px;
+  padding: 0px 10px;
+  font-size: 14px;
+
+
+}
+
+.links__list {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.links__list li {
+  list-style: none;
+}
+
+
 @media screen and (max-width: 900px) {
   .nav__searchInput {
     flex-grow: 0;
