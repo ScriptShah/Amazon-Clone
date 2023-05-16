@@ -705,7 +705,6 @@ footer {
   margin-top: 40px;
 }
 
-
 .footer__link-line {
   display: flex;
   flex-flow: row nowrap;
@@ -730,29 +729,78 @@ footer {
   padding: 10px 20px;
 }
 
-.link-line__links.a{
+.link-line__links.a {
   padding: 7px 20px;
 }
 
-.link-line__links span{
+.link-line__links span {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   width: fit-content;
   cursor: pointer;
-
 }
 
-.link-line__logo img{
-    flex-shrink: 0;
-    flex-grow: 0;
-    padding-right: 4.7rem;
-    height: 25px;
-    margin-top: 4px;
-    cursor: pointer;
+.link-line__logo img {
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding-right: 4.7rem;
+  height: 25px;
+  margin-top: 4px;
+  cursor: pointer;
 }
 
+.reference {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.ref__table {
+  display: flex;
+}
+
+tbody {
+  width: max-content;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+tr {
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+}
+
+td a {
+  color: #fff;
+  text-decoration: none;
+}
+
+td span {
+  font-size: 10px;
+  color: #dad8d8;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+.td__space {
+  width: 30px;
+  height: 120px;
+}
+
+.tr__space {
+  width: 100%;
+  height: 2px;
+}
 
 @media screen and (max-width: 900px) {
   .nav__searchInput {
