@@ -98,7 +98,7 @@ body {
 }
 
 .bg {
-  max-width: 1500px;
+  width: fit-content;
   height: 600px;
   overflow-x: hidden;
   position: absolute;
