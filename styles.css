@@ -98,9 +98,9 @@ body {
 }
 
 .bg {
-  width: fit-content;
+  width: 1500px;
   height: 600px;
-  overflow-x: hidden;
+  overflow: hidden;
   position: absolute;
   z-index: -1;
   margin-top: 100px;
